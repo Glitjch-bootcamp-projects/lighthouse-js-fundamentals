@@ -7,16 +7,16 @@ const judgeVegetable = function (vegetables, metric) {
   console.log(list);  
   
   //where the metric value influences how to sort the list variable above, from highest score to lowest
-    //UNRESOLVED: WHY CAN'T metric = "d" TRIGGER THE SORT METHOD WITHOUT HARD-CODING????
-    list.sort(function(a, b) {
-      return b.d - a.d;
-      });
-    console.log(list);
+  //UNRESOLVED: WHY CAN'T metric = "d" TRIGGER THE SORT METHOD WITHOUT HARD-CODING????
+  list.sort(function(a, b) {
+    return b.d - a.d;
+    });
+  console.log(list);
 
-    list.sort(function(a, b) {
-      return b.metric - a.metric;
-      });
-    console.log(list);
+  list.sort(function(a, b) {
+    return b.metric - a.metric;
+    });
+  console.log(list);
   
   //returns the winner for that specific metric characteristic and vegetable category.
   console.log(list[0].submitter);
